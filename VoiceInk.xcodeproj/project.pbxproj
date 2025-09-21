@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7020AFD82E7FD10200F7BB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7020AF1F2E7FD10200F7BB33 /* Assets.xcassets */; };
+		7020AFEF2E7FD48600F7BB33 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 7020AFE92E7FD48600F7BB33 /* Zip */; };
+		7020AFF12E7FD48600F7BB33 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 7020AFEB2E7FD48600F7BB33 /* FluidAudio */; };
+		7020AFF32E7FD48600F7BB33 /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; };
+		7020AFF82E7FD48600F7BB33 /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7020B0082E7FD8AC00F7BB33 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7020B0072E7FD8AC00F7BB33 /* KeyboardShortcuts */; };
+		7020B00B2E7FD90D00F7BB33 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 7020B00A2E7FD90D00F7BB33 /* Sparkle */; };
+		7020B00F2E7FDAEA00F7BB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B00D2E7FDAEA00F7BB33 /* ContentView.swift */; };
+		7020B0102E7FDAEA00F7BB33 /* VoiceInkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B00E2E7FDAEA00F7BB33 /* VoiceInkApp.swift */; };
 		E11BBA4E2E5DC555000AB839 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = E11BBA4D2E5DC555000AB839 /* FluidAudio */; };
 		E17382402E4C7D0E001BAEBE /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; };
 		E17382412E4C7D0E001BAEBE /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1A261122CC143AC00B233D1 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = E1A261112CC143AC00B233D1 /* KeyboardShortcuts */; };
 		E1ADD45A2CC5352A00303ECB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E1ADD4592CC5352A00303ECB /* LaunchAtLogin */; };
-		E1ADD45F2CC544F100303ECB /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = E1ADD45E2CC544F100303ECB /* Sparkle */; };
 		E1D7EF992E35E16C00640029 /* MediaRemoteAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = E1D7EF982E35E16C00640029 /* MediaRemoteAdapter */; };
 		E1D7EF9A2E35E19B00640029 /* MediaRemoteAdapter in Embed Frameworks */ = {isa = PBXBuildFile; productRef = E1D7EF982E35E16C00640029 /* MediaRemoteAdapter */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E1ECEC162E44591300DFFBA8 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = E1ECEC152E44591300DFFBA8 /* Zip */; };
@@ -36,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7020AFF72E7FD48600F7BB33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7020AFF82E7FD48600F7BB33 /* whisper.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A8C8CD2E1257B7003E58EC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,16 +69,209 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7020AF1F2E7FD10200F7BB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7020AFFD2E7FD48600F7BB33 /* VoiceInk iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoiceInk iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020B0042E7FD64F00F7BB33 /* VoiceInk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceInk.entitlements; sourceTree = "<group>"; };
+		7020B0052E7FD79F00F7BB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020B00D2E7FDAEA00F7BB33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7020B00E2E7FDAEA00F7BB33 /* VoiceInkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInkApp.swift; sourceTree = "<group>"; };
 		E11473B02CBE0F0A00318EE4 /* VoiceInk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceInk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11473C32CBE0F0B00318EE4 /* VoiceInkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceInkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11473CD2CBE0F0B00318EE4 /* VoiceInkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceInkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = whisper.xcframework; path = "../whisper.cpp/build-apple/whisper.xcframework"; sourceTree = "<group>"; };
-		E1CE28772E4336150082B758 /* whisper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = whisper.xcframework; path = "../build-apple/whisper.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7020AFFE2E7FD48700F7BB33 /* Exceptions for "VoiceInk" folder in "VoiceInk iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+				AppIntents/AppShortcuts.swift,
+				AppIntents/DismissMiniRecorderIntent.swift,
+				AppIntents/ToggleMiniRecorderIntent.swift,
+				ClipboardManager.swift,
+				CursorPaster.swift,
+				EmailSupport.swift,
+				HotkeyManager.swift,
+				Info.plist,
+				MediaController.swift,
+				MenuBarManager.swift,
+				MiniRecorderShortcutManager.swift,
+				Models/AIPrompts.swift,
+				Models/CustomPrompt.swift,
+				Models/LicenseViewModel.swift,
+				Models/PredefinedModels.swift,
+				Models/PredefinedPrompts.swift,
+				Models/PromptTemplates.swift,
+				Models/Transcription.swift,
+				Models/TranscriptionModel.swift,
+				Notifications/AnnouncementManager.swift,
+				Notifications/AnnouncementView.swift,
+				Notifications/AppNotifications.swift,
+				Notifications/AppNotificationView.swift,
+				Notifications/NotificationManager.swift,
+				PlaybackController.swift,
+				PowerMode/ActiveWindowService.swift,
+				PowerMode/AppPicker.swift,
+				PowerMode/BrowserURLService.swift,
+				PowerMode/EmojiManager.swift,
+				PowerMode/EmojiPickerView.swift,
+				PowerMode/PowerModeConfig.swift,
+				PowerMode/PowerModeConfigView.swift,
+				PowerMode/PowerModePopover.swift,
+				PowerMode/PowerModeSessionManager.swift,
+				PowerMode/PowerModeValidator.swift,
+				PowerMode/PowerModeView.swift,
+				PowerMode/PowerModeViewComponents.swift,
+				"Preview Content/Preview Assets.xcassets",
+				Recorder.swift,
+				Resources/arcURL.scpt,
+				Resources/braveURL.scpt,
+				Resources/chromeURL.scpt,
+				Resources/edgeURL.scpt,
+				Resources/firefoxURL.scpt,
+				"Resources/models/ggml-silero-v5.1.2.bin",
+				Resources/operaURL.scpt,
+				Resources/orionURL.scpt,
+				Resources/safariURL.scpt,
+				Resources/Sounds/esc.wav,
+				Resources/Sounds/pastess.mp3,
+				Resources/Sounds/recstart.mp3,
+				Resources/Sounds/recstop.mp3,
+				Resources/vivaldiURL.scpt,
+				Resources/yandexURL.scpt,
+				Resources/zenURL.scpt,
+				Services/AIEnhancementOutputFilter.swift,
+				Services/AIEnhancementService.swift,
+				Services/AIService.swift,
+				Services/AnnouncementsService.swift,
+				Services/AudioDeviceConfiguration.swift,
+				Services/AudioDeviceManager.swift,
+				Services/AudioFileProcessor.swift,
+				Services/AudioFileTranscriptionManager.swift,
+				Services/AudioFileTranscriptionService.swift,
+				Services/CloudTranscription/CloudTranscriptionService.swift,
+				Services/CloudTranscription/CustomModelManager.swift,
+				Services/CloudTranscription/DeepgramTranscriptionService.swift,
+				Services/CloudTranscription/ElevenLabsTranscriptionService.swift,
+				Services/CloudTranscription/GeminiTranscriptionService.swift,
+				Services/CloudTranscription/GroqTranscriptionService.swift,
+				Services/CloudTranscription/MistralTranscriptionService.swift,
+				Services/CloudTranscription/OpenAICompatibleTranscriptionService.swift,
+				Services/DictionaryContextService.swift,
+				Services/ImportExportService.swift,
+				Services/LastTranscriptionService.swift,
+				Services/LocalTranscriptionService.swift,
+				Services/NativeAppleTranscriptionService.swift,
+				Services/Obfuscator.swift,
+				Services/OllamaService.swift,
+				Services/ParakeetTranscriptionService.swift,
+				Services/PasteEligibilityService.swift,
+				Services/PolarService.swift,
+				Services/PromptDetectionService.swift,
+				Services/PromptMigrationService.swift,
+				Services/ScreenCaptureService.swift,
+				Services/SelectedTextService.swift,
+				Services/SupportedMedia.swift,
+				Services/TranscriptionAutoCleanupService.swift,
+				Services/TranscriptionFallbackManager.swift,
+				Services/TranscriptionService.swift,
+				Services/UserDefaultsManager.swift,
+				Services/VoiceActivityDetector.swift,
+				Services/VoiceInkCSVExportService.swift,
+				Services/WordReplacementService.swift,
+				SoundManager.swift,
+				"Views/AI Models/AddCustomModelView.swift",
+				"Views/AI Models/APIKeyManagementView.swift",
+				"Views/AI Models/CloudModelCardRowView.swift",
+				"Views/AI Models/CustomModelCardRowView.swift",
+				"Views/AI Models/LanguageSelectionView.swift",
+				"Views/AI Models/LocalModelCardRowView.swift",
+				"Views/AI Models/ModelCardRowView.swift",
+				"Views/AI Models/ModelManagementView.swift",
+				"Views/AI Models/NativeModelCardRowView.swift",
+				"Views/AI Models/ParakeetModelCardRowView.swift",
+				Views/AudioPlayerView.swift,
+				Views/AudioTranscribeView.swift,
+				Views/Common/AnimatedCopyButton.swift,
+				Views/Common/AnimatedSaveButton.swift,
+				Views/Common/AppIconView.swift,
+				Views/Common/CardBackground.swift,
+				Views/Common/TranscriptionFallbackView.swift,
+				Views/Components/InfoTip.swift,
+				Views/Components/ProBadge.swift,
+				Views/Components/PromptSelectionGrid.swift,
+				Views/Components/TrialMessageView.swift,
+				Views/ContentView.swift,
+				Views/Dictionary/DictionarySettingsView.swift,
+				Views/Dictionary/DictionaryView.swift,
+				Views/Dictionary/EditReplacementSheet.swift,
+				Views/Dictionary/WordReplacementView.swift,
+				Views/EnhancementSettingsView.swift,
+				Views/KeyboardShortcutView.swift,
+				Views/LicenseManagementView.swift,
+				Views/LicenseView.swift,
+				Views/MenuBarView.swift,
+				Views/Metrics/MetricCard.swift,
+				Views/Metrics/MetricsContent.swift,
+				Views/Metrics/MetricsSetupView.swift,
+				Views/Metrics/PerformanceAnalysisView.swift,
+				Views/Metrics/TimeEfficiencyView.swift,
+				Views/MetricsView.swift,
+				Views/ModelSettingsView.swift,
+				Views/Onboarding/OnboardingModelDownloadView.swift,
+				Views/Onboarding/OnboardingPermissionsView.swift,
+				Views/Onboarding/OnboardingTutorialView.swift,
+				Views/Onboarding/OnboardingView.swift,
+				Views/PermissionsView.swift,
+				Views/PromptEditorView.swift,
+				Views/Recorder/AudioVisualizerView.swift,
+				Views/Recorder/EnhancementPromptPopover.swift,
+				Views/Recorder/MiniRecorderPanel.swift,
+				Views/Recorder/MiniRecorderView.swift,
+				Views/Recorder/MiniWindowManager.swift,
+				Views/Recorder/NotchRecorderPanel.swift,
+				Views/Recorder/NotchRecorderView.swift,
+				Views/Recorder/NotchShape.swift,
+				Views/Recorder/NotchWindowManager.swift,
+				Views/Recorder/RecorderComponents.swift,
+				Views/Settings/AudioCleanupManager.swift,
+				Views/Settings/AudioCleanupSettingsView.swift,
+				Views/Settings/AudioInputSettingsView.swift,
+				Views/Settings/ExperimentalFeaturesSection.swift,
+				Views/Settings/SettingsView.swift,
+				Views/TranscriptionCard.swift,
+				Views/TranscriptionHistoryView.swift,
+				VoiceInk.swift,
+				Whisper/LibWhisper.swift,
+				Whisper/VADModelManager.swift,
+				Whisper/WhisperError.swift,
+				Whisper/WhisperHallucinationFilter.swift,
+				Whisper/WhisperPrompt.swift,
+				Whisper/WhisperState.swift,
+				"Whisper/WhisperState+LocalModelManager.swift",
+				"Whisper/WhisperState+ModelManagement.swift",
+				"Whisper/WhisperState+ModelQueries.swift",
+				"Whisper/WhisperState+Parakeet.swift",
+				"Whisper/WhisperState+UI.swift",
+				Whisper/WhisperTextFormatter.swift,
+				WindowManager.swift,
+			);
+			target = 7020AFE02E7FD48600F7BB33 /* VoiceInk iOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7020B0032E7FD58100F7BB33 /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		E11473B22CBE0F0A00318EE4 /* VoiceInk */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7020AFFE2E7FD48700F7BB33 /* Exceptions for "VoiceInk" folder in "VoiceInk iOS" target */,
+			);
 			path = VoiceInk;
 			sourceTree = "<group>";
 		};
@@ -77,17 +288,27 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7020AFEE2E7FD48600F7BB33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020AFEF2E7FD48600F7BB33 /* Zip in Frameworks */,
+				7020AFF12E7FD48600F7BB33 /* FluidAudio in Frameworks */,
+				7020AFF32E7FD48600F7BB33 /* whisper.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E11473AD2CBE0F0A00318EE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7020B00B2E7FD90D00F7BB33 /* Sparkle in Frameworks */,
 				E1ECEC162E44591300DFFBA8 /* Zip in Frameworks */,
 				E1ADD45A2CC5352A00303ECB /* LaunchAtLogin in Frameworks */,
 				E11BBA4E2E5DC555000AB839 /* FluidAudio in Frameworks */,
 				E1D7EF992E35E16C00640029 /* MediaRemoteAdapter in Frameworks */,
 				E17382402E4C7D0E001BAEBE /* whisper.xcframework in Frameworks */,
-				E1ADD45F2CC544F100303ECB /* Sparkle in Frameworks */,
-				E1A261122CC143AC00B233D1 /* KeyboardShortcuts in Frameworks */,
+				7020B0082E7FD8AC00F7BB33 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,14 +329,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7020B0002E7FD51300F7BB33 /* VoiceInk iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7020B00C2E7FDA9D00F7BB33 /* App */,
+				7020B0052E7FD79F00F7BB33 /* Info.plist */,
+				7020B0042E7FD64F00F7BB33 /* VoiceInk.entitlements */,
+				7020B0032E7FD58100F7BB33 /* Preview Content */,
+			);
+			path = "VoiceInk iOS";
+			sourceTree = "<group>";
+		};
+		7020B0012E7FD52B00F7BB33 /* VoiceInkCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VoiceInkCore;
+			sourceTree = "<group>";
+		};
+		7020B00C2E7FDA9D00F7BB33 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7020B00D2E7FDAEA00F7BB33 /* ContentView.swift */,
+				7020B00E2E7FDAEA00F7BB33 /* VoiceInkApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		E11473A72CBE0F0A00318EE4 = {
 			isa = PBXGroup;
 			children = (
+				7020B0012E7FD52B00F7BB33 /* VoiceInkCore */,
 				E11473B22CBE0F0A00318EE4 /* VoiceInk */,
+				7020B0002E7FD51300F7BB33 /* VoiceInk iOS */,
 				E11473C62CBE0F0B00318EE4 /* VoiceInkTests */,
 				E11473D02CBE0F0B00318EE4 /* VoiceInkUITests */,
 				E114741C2CBE1DE200318EE4 /* Frameworks */,
 				E11473B12CBE0F0A00318EE4 /* Products */,
+				7020AF1F2E7FD10200F7BB33 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +376,7 @@
 				E11473B02CBE0F0A00318EE4 /* VoiceInk.app */,
 				E11473C32CBE0F0B00318EE4 /* VoiceInkTests.xctest */,
 				E11473CD2CBE0F0B00318EE4 /* VoiceInkUITests.xctest */,
+				7020AFFD2E7FD48600F7BB33 /* VoiceInk iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +384,6 @@
 		E114741C2CBE1DE200318EE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E1CE28772E4336150082B758 /* whisper.xcframework */,
 				E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */,
 			);
 			name = Frameworks;
@@ -141,6 +392,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7020AFE02E7FD48600F7BB33 /* VoiceInk iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020AFFA2E7FD48600F7BB33 /* Build configuration list for PBXNativeTarget "VoiceInk iOS" */;
+			buildPhases = (
+				7020AFED2E7FD48600F7BB33 /* Sources */,
+				7020AFEE2E7FD48600F7BB33 /* Frameworks */,
+				7020AFF62E7FD48600F7BB33 /* Resources */,
+				7020AFF72E7FD48600F7BB33 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E11473B22CBE0F0A00318EE4 /* VoiceInk */,
+			);
+			name = "VoiceInk iOS";
+			packageProductDependencies = (
+				7020AFE92E7FD48600F7BB33 /* Zip */,
+				7020AFEB2E7FD48600F7BB33 /* FluidAudio */,
+			);
+			productName = VoiceInk;
+			productReference = 7020AFFD2E7FD48600F7BB33 /* VoiceInk iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E11473AF2CBE0F0A00318EE4 /* VoiceInk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E11473D72CBE0F0B00318EE4 /* Build configuration list for PBXNativeTarget "VoiceInk" */;
@@ -159,12 +435,12 @@
 			);
 			name = VoiceInk;
 			packageProductDependencies = (
-				E1A261112CC143AC00B233D1 /* KeyboardShortcuts */,
 				E1ADD4592CC5352A00303ECB /* LaunchAtLogin */,
-				E1ADD45E2CC544F100303ECB /* Sparkle */,
 				E1D7EF982E35E16C00640029 /* MediaRemoteAdapter */,
 				E1ECEC152E44591300DFFBA8 /* Zip */,
 				E11BBA4D2E5DC555000AB839 /* FluidAudio */,
+				7020B0072E7FD8AC00F7BB33 /* KeyboardShortcuts */,
+				7020B00A2E7FD90D00F7BB33 /* Sparkle */,
 			);
 			productName = VoiceInk;
 			productReference = E11473B02CBE0F0A00318EE4 /* VoiceInk.app */;
@@ -226,6 +502,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					7020AFE02E7FD48600F7BB33 = {
+						LastSwiftMigration = 2600;
+					};
 					E11473AF2CBE0F0A00318EE4 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -249,12 +528,12 @@
 			mainGroup = E11473A72CBE0F0A00318EE4;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				E1A261102CC143AC00B233D1 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				E1ADD4582CC5352A00303ECB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
-				E1ADD45D2CC544F100303ECB /* XCRemoteSwiftPackageReference "Sparkle" */,
 				E1D7EF972E35E16C00640029 /* XCRemoteSwiftPackageReference "mediaremote-adapter" */,
 				E1ECEC142E44590200DFFBA8 /* XCRemoteSwiftPackageReference "Zip" */,
 				E11BBA4C2E5DC555000AB839 /* XCRemoteSwiftPackageReference "FluidAudio" */,
+				7020B0062E7FD8AC00F7BB33 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				7020B0092E7FD90D00F7BB33 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E11473B12CBE0F0A00318EE4 /* Products */;
@@ -262,6 +541,7 @@
 			projectRoot = "";
 			targets = (
 				E11473AF2CBE0F0A00318EE4 /* VoiceInk */,
+				7020AFE02E7FD48600F7BB33 /* VoiceInk iOS */,
 				E11473C22CBE0F0B00318EE4 /* VoiceInkTests */,
 				E11473CC2CBE0F0B00318EE4 /* VoiceInkUITests */,
 			);
@@ -269,10 +549,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7020AFF62E7FD48600F7BB33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E11473AE2CBE0F0A00318EE4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7020AFD82E7FD10200F7BB33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +581,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7020AFED2E7FD48600F7BB33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020B00F2E7FDAEA00F7BB33 /* ContentView.swift in Sources */,
+				7020B0102E7FDAEA00F7BB33 /* VoiceInkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E11473AC2CBE0F0A00318EE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +627,91 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7020AFFB2E7FD48600F7BB33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "VoiceInk iOS/VoiceInk.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 155;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceInk iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = F2NXUCKJL5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VoiceInk iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = VoiceInk;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VoiceInk needs to interact with your browser to detect the current website for applying website-specific configurations.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceInk needs access to your microphone to record audio for transcription.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.55;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuegr.VoiceInk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG ENABLE_NATIVE_SPEECH_ANALYZER $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7020AFFC2E7FD48600F7BB33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "VoiceInk iOS/VoiceInk.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 155;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceInk iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = F2NXUCKJL5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VoiceInk iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = VoiceInk;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VoiceInk needs to interact with your browser to detect the current website for applying website-specific configurations.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceInk needs access to your microphone to record audio for transcription.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.55;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuegr.VoiceInk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "ENABLE_NATIVE_SPEECH_ANALYZER $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E11473D52CBE0F0B00318EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,21 +843,24 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 155;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceInk/Preview Content\"";
-				DEVELOPMENT_TEAM = V6J6A3VWY2;
+				DEVELOPMENT_TEAM = F2NXUCKJL5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoiceInk/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = VoiceInk;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VoiceInk needs to interact with your browser to detect the current website for applying website-specific configurations.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceInk needs access to your microphone to record audio for transcription.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.55;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prakashjoshipax.VoiceInk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuegr.VoiceInk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG ENABLE_NATIVE_SPEECH_ANALYZER $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -495,21 +880,24 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 155;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceInk/Preview Content\"";
-				DEVELOPMENT_TEAM = V6J6A3VWY2;
+				DEVELOPMENT_TEAM = F2NXUCKJL5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoiceInk/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = VoiceInk;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VoiceInk needs to interact with your browser to detect the current website for applying website-specific configurations.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceInk needs access to your microphone to record audio for transcription.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.55;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prakashjoshipax.VoiceInk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuegr.VoiceInk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "ENABLE_NATIVE_SPEECH_ANALYZER $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -588,6 +976,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7020AFFA2E7FD48600F7BB33 /* Build configuration list for PBXNativeTarget "VoiceInk iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020AFFB2E7FD48600F7BB33 /* Debug */,
+				7020AFFC2E7FD48600F7BB33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E11473AB2CBE0F0A00318EE4 /* Build configuration list for PBXProject "VoiceInk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -627,6 +1024,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7020AFEA2E7FD48600F7BB33 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		7020AFEC2E7FD48600F7BB33 /* XCRemoteSwiftPackageReference "FluidAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidInference/FluidAudio";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7020B0062E7FD8AC00F7BB33 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
+		7020B0092E7FD90D00F7BB33 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.7.1;
+			};
+		};
 		E11BBA4C2E5DC555000AB839 /* XCRemoteSwiftPackageReference "FluidAudio" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FluidInference/FluidAudio";
@@ -635,28 +1064,12 @@
 				kind = branch;
 			};
 		};
-		E1A261102CC143AC00B233D1 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.0;
-			};
-		};
 		E1ADD4582CC5352A00303ECB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
 			requirement = {
 				branch = main;
 				kind = branch;
-			};
-		};
-		E1ADD45D2CC544F100303ECB /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.4;
 			};
 		};
 		E1D7EF972E35E16C00640029 /* XCRemoteSwiftPackageReference "mediaremote-adapter" */ = {
@@ -678,25 +1091,35 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7020AFE92E7FD48600F7BB33 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7020AFEA2E7FD48600F7BB33 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+		7020AFEB2E7FD48600F7BB33 /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7020AFEC2E7FD48600F7BB33 /* XCRemoteSwiftPackageReference "FluidAudio" */;
+			productName = FluidAudio;
+		};
+		7020B0072E7FD8AC00F7BB33 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7020B0062E7FD8AC00F7BB33 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		7020B00A2E7FD90D00F7BB33 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7020B0092E7FD90D00F7BB33 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
 		E11BBA4D2E5DC555000AB839 /* FluidAudio */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E11BBA4C2E5DC555000AB839 /* XCRemoteSwiftPackageReference "FluidAudio" */;
 			productName = FluidAudio;
 		};
-		E1A261112CC143AC00B233D1 /* KeyboardShortcuts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E1A261102CC143AC00B233D1 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
-			productName = KeyboardShortcuts;
-		};
 		E1ADD4592CC5352A00303ECB /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E1ADD4582CC5352A00303ECB /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
 			productName = LaunchAtLogin;
-		};
-		E1ADD45E2CC544F100303ECB /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E1ADD45D2CC544F100303ECB /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
 		};
 		E1D7EF982E35E16C00640029 /* MediaRemoteAdapter */ = {
 			isa = XCSwiftPackageProductDependency;
