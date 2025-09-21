@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7020AF342E7FD10200F7BB33 /* PredefinedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */; };
+		7020AF372E7FD10200F7BB33 /* Transcription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE772E7FD10200F7BB33 /* Transcription.swift */; };
+		7020AF382E7FD10200F7BB33 /* TranscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */; };
+		7020AF4B2E7FD10200F7BB33 /* CustomModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AEA32E7FD10200F7BB33 /* CustomModelManager.swift */; };
 		7020AFD82E7FD10200F7BB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7020AF1F2E7FD10200F7BB33 /* Assets.xcassets */; };
 		7020AFEF2E7FD48600F7BB33 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 7020AFE92E7FD48600F7BB33 /* Zip */; };
 		7020AFF12E7FD48600F7BB33 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 7020AFEB2E7FD48600F7BB33 /* FluidAudio */; };
@@ -14,10 +18,17 @@
 		7020AFF82E7FD48600F7BB33 /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7020B0082E7FD8AC00F7BB33 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7020B0072E7FD8AC00F7BB33 /* KeyboardShortcuts */; };
 		7020B00B2E7FD90D00F7BB33 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 7020B00A2E7FD90D00F7BB33 /* Sparkle */; };
-		7020B00F2E7FDAEA00F7BB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B00D2E7FDAEA00F7BB33 /* ContentView.swift */; };
-		7020B0102E7FDAEA00F7BB33 /* VoiceInkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B00E2E7FDAEA00F7BB33 /* VoiceInkApp.swift */; };
 		7020B0142E7FE05B00F7BB33 /* MediaRemoteAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 7020B0132E7FE05B00F7BB33 /* MediaRemoteAdapter */; };
 		7020B0152E7FE06900F7BB33 /* MediaRemoteAdapter in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7020B0132E7FE05B00F7BB33 /* MediaRemoteAdapter */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7020B0172E7FE34E00F7BB33 /* Transcription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE772E7FD10200F7BB33 /* Transcription.swift */; };
+		7020B0182E7FE39E00F7BB33 /* TranscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */; };
+		7020B0192E7FE3CC00F7BB33 /* PredefinedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */; };
+		7020B01C2E7FE45B00F7BB33 /* CustomModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AEA32E7FD10200F7BB33 /* CustomModelManager.swift */; };
+		7020B06C2E7FE8F500F7BB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020B0682E7FE8F500F7BB33 /* Main.storyboard */; };
+		7020B06D2E7FE8F500F7BB33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020B0662E7FE8F500F7BB33 /* LaunchScreen.storyboard */; };
+		7020B06E2E7FE8F500F7BB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B06B2E7FE8F500F7BB33 /* ViewController.swift */; };
+		7020B06F2E7FE8F500F7BB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B0642E7FE8F500F7BB33 /* AppDelegate.swift */; };
+		7020B0702E7FE8F500F7BB33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B06A2E7FE8F500F7BB33 /* SceneDelegate.swift */; };
 		E11BBA4E2E5DC555000AB839 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = E11BBA4D2E5DC555000AB839 /* FluidAudio */; };
 		E17382402E4C7D0E001BAEBE /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; };
 		E17382412E4C7D0E001BAEBE /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -69,12 +80,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedModels.swift; sourceTree = "<group>"; };
+		7020AE772E7FD10200F7BB33 /* Transcription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcription.swift; sourceTree = "<group>"; };
+		7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionModel.swift; sourceTree = "<group>"; };
+		7020AEA32E7FD10200F7BB33 /* CustomModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelManager.swift; sourceTree = "<group>"; };
 		7020AF1F2E7FD10200F7BB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7020AFFD2E7FD48600F7BB33 /* VoiceInk iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoiceInk iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7020B0042E7FD64F00F7BB33 /* VoiceInk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceInk.entitlements; sourceTree = "<group>"; };
 		7020B0052E7FD79F00F7BB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7020B00D2E7FDAEA00F7BB33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7020B00E2E7FDAEA00F7BB33 /* VoiceInkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInkApp.swift; sourceTree = "<group>"; };
+		7020B0642E7FE8F500F7BB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7020B0652E7FE8F500F7BB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7020B0672E7FE8F500F7BB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		7020B06A2E7FE8F500F7BB33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7020B06B2E7FE8F500F7BB33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E11473B02CBE0F0A00318EE4 /* VoiceInk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceInk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11473C32CBE0F0B00318EE4 /* VoiceInkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceInkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11473CD2CBE0F0B00318EE4 /* VoiceInkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceInkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,11 +118,8 @@
 				Models/AIPrompts.swift,
 				Models/CustomPrompt.swift,
 				Models/LicenseViewModel.swift,
-				Models/PredefinedModels.swift,
 				Models/PredefinedPrompts.swift,
 				Models/PromptTemplates.swift,
-				Models/Transcription.swift,
-				Models/TranscriptionModel.swift,
 				Notifications/AnnouncementManager.swift,
 				Notifications/AnnouncementView.swift,
 				Notifications/AppNotifications.swift,
@@ -151,7 +166,6 @@
 				Services/AudioFileTranscriptionManager.swift,
 				Services/AudioFileTranscriptionService.swift,
 				Services/CloudTranscription/CloudTranscriptionService.swift,
-				Services/CloudTranscription/CustomModelManager.swift,
 				Services/CloudTranscription/DeepgramTranscriptionService.swift,
 				Services/CloudTranscription/ElevenLabsTranscriptionService.swift,
 				Services/CloudTranscription/GeminiTranscriptionService.swift,
@@ -274,6 +288,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7020B0292E7FE78E00F7BB33 /* Whisper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Whisper;
+			sourceTree = "<group>";
+		};
 		E11473B22CBE0F0A00318EE4 /* VoiceInk */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -340,7 +359,10 @@
 		7020B0002E7FD51300F7BB33 /* VoiceInk iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7020B00C2E7FDA9D00F7BB33 /* App */,
+				7020B0642E7FE8F500F7BB33 /* AppDelegate.swift */,
+				7020B0692E7FE8F500F7BB33 /* Base.lproj */,
+				7020B06A2E7FE8F500F7BB33 /* SceneDelegate.swift */,
+				7020B06B2E7FE8F500F7BB33 /* ViewController.swift */,
 				7020B0052E7FD79F00F7BB33 /* Info.plist */,
 				7020B0042E7FD64F00F7BB33 /* VoiceInk.entitlements */,
 				7020B0032E7FD58100F7BB33 /* Preview Content */,
@@ -351,25 +373,46 @@
 		7020B0012E7FD52B00F7BB33 /* VoiceInkCore */ = {
 			isa = PBXGroup;
 			children = (
+				7020B01A2E7FE41D00F7BB33 /* Services */,
 				7020B0112E7FDE7E00F7BB33 /* Models */,
+				7020B0292E7FE78E00F7BB33 /* Whisper */,
 			);
 			path = VoiceInkCore;
-			sourceTree = "<group>";
-		};
-		7020B00C2E7FDA9D00F7BB33 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				7020B00D2E7FDAEA00F7BB33 /* ContentView.swift */,
-				7020B00E2E7FDAEA00F7BB33 /* VoiceInkApp.swift */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		7020B0112E7FDE7E00F7BB33 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */,
+				7020AE772E7FD10200F7BB33 /* Transcription.swift */,
+				7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7020B01A2E7FE41D00F7BB33 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7020B01B2E7FE42600F7BB33 /* CloudTranscription */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7020B01B2E7FE42600F7BB33 /* CloudTranscription */ = {
+			isa = PBXGroup;
+			children = (
+				7020AEA32E7FD10200F7BB33 /* CustomModelManager.swift */,
+			);
+			path = CloudTranscription;
+			sourceTree = "<group>";
+		};
+		7020B0692E7FE8F500F7BB33 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				7020B0662E7FE8F500F7BB33 /* LaunchScreen.storyboard */,
+				7020B0682E7FE8F500F7BB33 /* Main.storyboard */,
+			);
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		E11473A72CBE0F0A00318EE4 = {
@@ -422,6 +465,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				7020B0292E7FE78E00F7BB33 /* Whisper */,
 				E11473B22CBE0F0A00318EE4 /* VoiceInk */,
 			);
 			name = "VoiceInk iOS";
@@ -447,6 +491,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				7020B0292E7FE78E00F7BB33 /* Whisper */,
 				E11473B22CBE0F0A00318EE4 /* VoiceInk */,
 			);
 			name = VoiceInk;
@@ -569,6 +614,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7020B06C2E7FE8F500F7BB33 /* Main.storyboard in Resources */,
+				7020B06D2E7FE8F500F7BB33 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,8 +648,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7020B00F2E7FDAEA00F7BB33 /* ContentView.swift in Sources */,
-				7020B0102E7FDAEA00F7BB33 /* VoiceInkApp.swift in Sources */,
+				7020B0182E7FE39E00F7BB33 /* TranscriptionModel.swift in Sources */,
+				7020B06E2E7FE8F500F7BB33 /* ViewController.swift in Sources */,
+				7020B06F2E7FE8F500F7BB33 /* AppDelegate.swift in Sources */,
+				7020B0702E7FE8F500F7BB33 /* SceneDelegate.swift in Sources */,
+				7020B0172E7FE34E00F7BB33 /* Transcription.swift in Sources */,
+				7020B01C2E7FE45B00F7BB33 /* CustomModelManager.swift in Sources */,
+				7020B0192E7FE3CC00F7BB33 /* PredefinedModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +662,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7020AF342E7FD10200F7BB33 /* PredefinedModels.swift in Sources */,
+				7020AF372E7FD10200F7BB33 /* Transcription.swift in Sources */,
+				7020AF382E7FD10200F7BB33 /* TranscriptionModel.swift in Sources */,
+				7020AF4B2E7FD10200F7BB33 /* CustomModelManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +697,25 @@
 			targetProxy = E11473CE2CBE0F0B00318EE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7020B0662E7FE8F500F7BB33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7020B0652E7FE8F500F7BB33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7020B0682E7FE8F500F7BB33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7020B0672E7FE8F500F7BB33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7020AFFB2E7FD48600F7BB33 /* Debug */ = {
