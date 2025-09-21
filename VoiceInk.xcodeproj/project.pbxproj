@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7020AF312E7FD10200F7BB33 /* AIPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE712E7FD10200F7BB33 /* AIPrompts.swift */; };
+		7020AF322E7FD10200F7BB33 /* CustomPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE722E7FD10200F7BB33 /* CustomPrompt.swift */; };
 		7020AF342E7FD10200F7BB33 /* PredefinedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */; };
+		7020AF352E7FD10200F7BB33 /* PredefinedPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE752E7FD10200F7BB33 /* PredefinedPrompts.swift */; };
+		7020AF362E7FD10200F7BB33 /* PromptTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE762E7FD10200F7BB33 /* PromptTemplates.swift */; };
 		7020AF372E7FD10200F7BB33 /* Transcription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE772E7FD10200F7BB33 /* Transcription.swift */; };
 		7020AF382E7FD10200F7BB33 /* TranscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */; };
 		7020AF4B2E7FD10200F7BB33 /* CustomModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AEA32E7FD10200F7BB33 /* CustomModelManager.swift */; };
@@ -29,6 +33,10 @@
 		7020B06E2E7FE8F500F7BB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B06B2E7FE8F500F7BB33 /* ViewController.swift */; };
 		7020B06F2E7FE8F500F7BB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B0642E7FE8F500F7BB33 /* AppDelegate.swift */; };
 		7020B0702E7FE8F500F7BB33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020B06A2E7FE8F500F7BB33 /* SceneDelegate.swift */; };
+		7020B0A12E7FF37400F7BB33 /* AIPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE712E7FD10200F7BB33 /* AIPrompts.swift */; };
+		7020B0A22E7FF37400F7BB33 /* CustomPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE722E7FD10200F7BB33 /* CustomPrompt.swift */; };
+		7020B0A32E7FF37400F7BB33 /* PromptTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE762E7FD10200F7BB33 /* PromptTemplates.swift */; };
+		7020B0A42E7FF37400F7BB33 /* PredefinedPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020AE752E7FD10200F7BB33 /* PredefinedPrompts.swift */; };
 		E11BBA4E2E5DC555000AB839 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = E11BBA4D2E5DC555000AB839 /* FluidAudio */; };
 		E17382402E4C7D0E001BAEBE /* whisper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; };
 		E17382412E4C7D0E001BAEBE /* whisper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1B2DCAA2E3DE70A008DFD68 /* whisper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,7 +88,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7020AE712E7FD10200F7BB33 /* AIPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPrompts.swift; sourceTree = "<group>"; };
+		7020AE722E7FD10200F7BB33 /* CustomPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrompt.swift; sourceTree = "<group>"; };
 		7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedModels.swift; sourceTree = "<group>"; };
+		7020AE752E7FD10200F7BB33 /* PredefinedPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedPrompts.swift; sourceTree = "<group>"; };
+		7020AE762E7FD10200F7BB33 /* PromptTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTemplates.swift; sourceTree = "<group>"; };
 		7020AE772E7FD10200F7BB33 /* Transcription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcription.swift; sourceTree = "<group>"; };
 		7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionModel.swift; sourceTree = "<group>"; };
 		7020AEA32E7FD10200F7BB33 /* CustomModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModelManager.swift; sourceTree = "<group>"; };
@@ -115,11 +127,7 @@
 				MediaController.swift,
 				MenuBarManager.swift,
 				MiniRecorderShortcutManager.swift,
-				Models/AIPrompts.swift,
-				Models/CustomPrompt.swift,
 				Models/LicenseViewModel.swift,
-				Models/PredefinedPrompts.swift,
-				Models/PromptTemplates.swift,
 				Notifications/AnnouncementManager.swift,
 				Notifications/AnnouncementView.swift,
 				Notifications/AppNotifications.swift,
@@ -288,11 +296,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7020B0292E7FE78E00F7BB33 /* Whisper */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Whisper;
-			sourceTree = "<group>";
-		};
 		E11473B22CBE0F0A00318EE4 /* VoiceInk */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -375,7 +378,6 @@
 			children = (
 				7020B01A2E7FE41D00F7BB33 /* Services */,
 				7020B0112E7FDE7E00F7BB33 /* Models */,
-				7020B0292E7FE78E00F7BB33 /* Whisper */,
 			);
 			path = VoiceInkCore;
 			sourceTree = "<group>";
@@ -383,6 +385,10 @@
 		7020B0112E7FDE7E00F7BB33 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7020AE712E7FD10200F7BB33 /* AIPrompts.swift */,
+				7020AE722E7FD10200F7BB33 /* CustomPrompt.swift */,
+				7020AE752E7FD10200F7BB33 /* PredefinedPrompts.swift */,
+				7020AE762E7FD10200F7BB33 /* PromptTemplates.swift */,
 				7020AE782E7FD10200F7BB33 /* TranscriptionModel.swift */,
 				7020AE772E7FD10200F7BB33 /* Transcription.swift */,
 				7020AE742E7FD10200F7BB33 /* PredefinedModels.swift */,
@@ -465,7 +471,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7020B0292E7FE78E00F7BB33 /* Whisper */,
 				E11473B22CBE0F0A00318EE4 /* VoiceInk */,
 			);
 			name = "VoiceInk iOS";
@@ -491,7 +496,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7020B0292E7FE78E00F7BB33 /* Whisper */,
 				E11473B22CBE0F0A00318EE4 /* VoiceInk */,
 			);
 			name = VoiceInk;
@@ -649,6 +653,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7020B0182E7FE39E00F7BB33 /* TranscriptionModel.swift in Sources */,
+				7020B0A12E7FF37400F7BB33 /* AIPrompts.swift in Sources */,
+				7020B0A22E7FF37400F7BB33 /* CustomPrompt.swift in Sources */,
+				7020B0A32E7FF37400F7BB33 /* PromptTemplates.swift in Sources */,
+				7020B0A42E7FF37400F7BB33 /* PredefinedPrompts.swift in Sources */,
 				7020B06E2E7FE8F500F7BB33 /* ViewController.swift in Sources */,
 				7020B06F2E7FE8F500F7BB33 /* AppDelegate.swift in Sources */,
 				7020B0702E7FE8F500F7BB33 /* SceneDelegate.swift in Sources */,
@@ -662,7 +670,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7020AF312E7FD10200F7BB33 /* AIPrompts.swift in Sources */,
+				7020AF322E7FD10200F7BB33 /* CustomPrompt.swift in Sources */,
 				7020AF342E7FD10200F7BB33 /* PredefinedModels.swift in Sources */,
+				7020AF352E7FD10200F7BB33 /* PredefinedPrompts.swift in Sources */,
+				7020AF362E7FD10200F7BB33 /* PromptTemplates.swift in Sources */,
 				7020AF372E7FD10200F7BB33 /* Transcription.swift in Sources */,
 				7020AF382E7FD10200F7BB33 /* TranscriptionModel.swift in Sources */,
 				7020AF4B2E7FD10200F7BB33 /* CustomModelManager.swift in Sources */,

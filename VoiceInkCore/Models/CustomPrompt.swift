@@ -109,7 +109,17 @@ struct CustomPrompt: Identifiable, Codable, Equatable {
 // MARK: - UI Extensions
 extension CustomPrompt {
     func promptIcon(isSelected: Bool, onTap: @escaping () -> Void, onEdit: ((CustomPrompt) -> Void)? = nil, onDelete: ((CustomPrompt) -> Void)? = nil) -> some View {
-        VStack(spacing: 8) {
+        
+        let backgroundColors: [Color]
+#if os(macOS)
+        backgroundColors = [Color(NSColor.controlBackgroundColor).opacity(0.95),
+                  Color(NSColor.controlBackgroundColor).opacity(0.85)]
+#elseif os(iOS)
+        backgroundColors = [Color(UIColor.systemBackground).opacity(0.95),
+                  Color(UIColor.systemBackground).opacity(0.85)]
+#endif
+        
+        return VStack(spacing: 8) {
             ZStack {
                 // Dynamic background with blur effect
                 RoundedRectangle(cornerRadius: 14)
@@ -120,10 +130,7 @@ extension CustomPrompt {
                                     Color.accentColor.opacity(0.9),
                                     Color.accentColor.opacity(0.7)
                                 ]) :
-                                Gradient(colors: [
-                                    Color(NSColor.controlBackgroundColor).opacity(0.95),
-                                    Color(NSColor.controlBackgroundColor).opacity(0.85)
-                                ]),
+                                Gradient(colors: backgroundColors),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -267,16 +274,23 @@ extension CustomPrompt {
     
     // Static method to create an "Add New" button with the same styling as the prompt icons
     static func addNewButton(action: @escaping () -> Void) -> some View {
-        VStack(spacing: 8) {
+        let backgroundColors: [Color]
+        #if os(macOS)
+        backgroundColors = [Color(NSColor.controlBackgroundColor).opacity(0.95),
+                          Color(NSColor.controlBackgroundColor).opacity(0.85)]
+        #elseif os(iOS)
+        backgroundColors = [Color(UIColor.systemBackground).opacity(0.95),
+                          Color(UIColor.systemBackground).opacity(0.85)]
+        #endif
+        
+        
+        return VStack(spacing: 8) {
             ZStack {
                 // Dynamic background with blur effect - same styling as promptIcon
                 RoundedRectangle(cornerRadius: 14)
                     .fill(
                         LinearGradient(
-                            gradient: Gradient(colors: [
-                                Color(NSColor.controlBackgroundColor).opacity(0.95),
-                                Color(NSColor.controlBackgroundColor).opacity(0.85)
-                            ]),
+                            gradient: Gradient(colors: backgroundColors),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )

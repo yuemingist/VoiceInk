@@ -1,5 +1,9 @@
 import Foundation
+#if os(macOS)
 import AppKit
+#elseif os(iOS)
+import UIKit
+#endif
 
 @MainActor
 class LicenseViewModel: ObservableObject {
@@ -9,13 +13,13 @@ class LicenseViewModel: ObservableObject {
         case licensed
     }
     
-    @Published private(set) var licenseState: LicenseState = .trial(daysRemaining: 7)  // Default to trial
+    @Published private(set) var licenseState: LicenseState = .trial(daysRemaining: 30)  // Default to trial
     @Published var licenseKey: String = ""
     @Published var isValidating = false
     @Published var validationMessage: String?
     @Published private(set) var activationsLimit: Int = 0
     
-    private let trialPeriodDays = 7
+    private let trialPeriodDays = 30
     private let polarService = PolarService()
     private let userDefaults = UserDefaults.standard
     

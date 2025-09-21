@@ -1,6 +1,10 @@
 import Foundation
-import IOKit
 import os
+
+#if os(macOS)
+import IOKit
+#elseif os(iOS)
+#endif
 
 class PolarService {
     private let organizationId = "Org"
